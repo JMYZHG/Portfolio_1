@@ -1,0 +1,69 @@
+.main__page {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.main__page__icon {
+	font-size: 15rem;
+}
+.skills-area {
+	height: 100vh;
+}
+.skills-area .skills{
+    background: rgba(233, 239, 240, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+	border-radius: 20px;
+    transition: box-shadow .7s ease;
+}
+.skills-area .skills:hover{
+	transform: scale(1.02) perspective(0px);
+  	box-shadow: 0 10px 10px rgba(126, 119, 119, 0.7);
+}
+
+.logo {
+	font-size: 50px;
+}
+
+
+.hidden {
+	opacity: 0;
+	transition: all 1s;
+	filter: blur(5px);
+	transform: translateX(-100%);
+	transition: all 1s;
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+	.hidden {
+		transition: none;
+	}
+}
+.logo:nth-child(2) {
+	transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+	transition-delay: 300ms;
+}
+.logo:nth-child(4) {
+	transition-delay: 400ms;
+}
+.logo:nth-child(5) {
+	transition-delay: 500ms;
+}
+.work-area{
+	height: 100vh;
+}
+
+.contact-area {
+	height: 100vh;
+}
